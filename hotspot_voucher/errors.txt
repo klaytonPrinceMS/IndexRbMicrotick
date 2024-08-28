@@ -1,0 +1,17 @@
+internal-error = Estamos enfrentando um erro interno ($(error-orig)) informe o administrador da rede
+config-error = Estamos enfrentando um erro interno ($(error-orig)) informe o administrador da rede
+not-logged-in = Você não está logado (ip $(ip))
+ippool-empty = Não foi possivel disponibilizar um IP
+shutting-down = Infelizmente foi encerrando o Wi-fi informe o administrador da rede
+user-not-found = $(username) não está registrado em nossa base de dados
+user-session-limit = $(username) já está em uso em nossa base de dados
+license-session-limit = O limite de sessão foi atingido ($(error-orig)) verifique com o administrador da rede a possibilidade de um novo logim
+wrong-mac-username = Usuario invalido ($(username)): Este endereço não é seu
+chap-missing = Feche o navegador ou ative o Javascript e tente novamente estamos com erro de chap
+invalid-username =  Desculpe, sua ID de usuário ou senha está incorreta, tente novamente
+invalid-mac = Usuario $(username) não pode fazer logon neste computador
+uptime-limit =  Desculpe, $(username) você atingiu o tempo máximo de uso, verifique com o administrador da rede a possibilidade de um novo logim
+traffic-limit =  Desculpe, $(username) atingiu limite de dados da navegação, verifique com o administrador da rede a possibilidade de um novo logim
+radius-timeout = Atingiu o limite disponivel para navegação
+auth-in-progress = Seu pedido está sendo processado
+radius-reply = Estamos enfrentando um erro interno $(error-orig) informe o administrador da rede

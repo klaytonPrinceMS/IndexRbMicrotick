@@ -1,0 +1,38 @@
+$(if http-status == 302)Hotspot redirect$(endif)
+$(if http-header == "Location")$(link-redirect)$(endif)
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--
+======================================================================
+==                        T! SOS Sistemas                           ==
+======================================================================
+== Responsável técnico: Klayton Bueno Prince, Analista de  Sistemas ==
+== com  especialisação  em Segurança  da Informação, com  enfase em ==
+== Segurança de redes: Roteadores de borda, como serviço para PME's ==
+== e usúarios domésticos                                            ==
+======================================================================
+-->
+    <head>
+        <title>T! SOS- WIFI</title>
+        <link rel="shortcut icon" href="zArquivos/img/favicon.png" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Wi-fi T! SOS Sistemas">
+        <meta name="author" content="Klayton Bueno Prince">
+        <!-- css -->
+        <link rel="stylesheet" href="zArquivos/css/bootstrap3-2-0.css" rel="stylesheet">
+        <link rel="stylesheet" href="zArquivos/css/KBPstyle.css" rel="stylesheet">
+       <!--JS -->
+        <script type="text/javascript" src="zArquivos/js/kbp.js"></script>
+        <script type="text/javascript" src="zArquivos/js/md5.js"></script>
+        <script type="text/javascript" src="zArquivos/js/jquery1-11-1.js"></script>
+        <!-- CSS JS Fora do site -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <meta http-equiv="refresh" content="0; url=$(link-redirect)">
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="expires" content="-1">
+</head>
+<body>
+</body>
+</html>

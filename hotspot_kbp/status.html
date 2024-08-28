@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--
+======================================================================
+==                        T! SOS Sistemas                           ==
+======================================================================
+== Responsável técnico: Klayton Bueno Prince, Analista de  Sistemas ==
+== com  especialisação  em Segurança  da Informação, com  enfase em ==
+== Segurança de redes: Roteadores de borda, como serviço para PME's ==
+== e usúarios domésticos                                            ==
+======================================================================
+-->
+    <head>
+        <title>T! SOS- WIFI</title>
+        <link rel="shortcut icon" href="zArquivos/img/favicon.png" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Wi-fi T! SOS Sistemas">
+        <meta name="author" content="Klayton Bueno Prince">
+        <!-- css -->
+        <link rel="stylesheet" href="zArquivos/css/bootstrap3-2-0.css" rel="stylesheet">
+        <link rel="stylesheet" href="zArquivos/css/KBPstyle.css" rel="stylesheet">
+       <!--JS -->
+        <script type="text/javascript" src="zArquivos/js/kbp.js"></script>
+        <script type="text/javascript" src="zArquivos/js/md5.js"></script>
+        <script type="text/javascript" src="zArquivos/js/jquery1-11-1.js"></script>
+        <!-- CSS JS Fora do site -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+
+
+
+	$(if refresh-timeout)
+		<meta http-equiv="refresh" content="$(refresh-timeout-secs)">
+	$(endif)
+	<script language="JavaScript">
+		<!--
+		$(if advert-pending == 'yes')
+			var popup = '';
+			function focusAdvert() {
+			if (window.focus) popup.focus();
+			}
+			function openAdvert() {
+			popup = open('$(link-advert)', 'hotspot_advert', '');
+			setTimeout("focusAdvert()", 1000);
+			}
+		$(endif)
+			function openLogout() {
+			if (window.name != 'hotspot_status') return true;
+				open('$(link-logout)', 'hotspot_logout', 'toolbar=0,location=0,directories=0,status=0,menubars=0,resizable=1,width=280,height=250');
+			window.close();
+			return false;
+			}
+		//-->
+		function recarga(){
+			location.reload();
+		}
+	</script>
+</head>
+
+
+
+
+
+<body $(if advert-pending == 'yes') onLoad="openAdvert()" $(endif)>
+	<div>
+		<script>
+			kbpMenuFlutuanteConectado()
+		</script>
+    <div id="KBPcorpoSite" class="row box-top">
+        <div class="container">
+            <div id="KBPcontaineiEsquerdo" class="col-xs-12 col-sm-8 col-md-8" >
+				<script>
+                kbpPropaganda(imgKbpProp1,imgKbpProp2,imgKbpProp3,imgKbpProp4,imgKbpProp5,imgKbpProp6,imgKbpProp7,imgKbpProp8,imgKbpProp9,imgKbpProp10,imgKbpProp11,imgKbpProp12)
+                </script>
+            </div>
+            <div id="KBPcontainerDireito" class="col-xs-12 col-sm-4 col-md-4">
+                <div style="background-color: rgba(255, 255, 255, 0.49);border-bottom-right-radius:3px;border-bottom-left-radius:3px;padding:10px;margin-bottom:20px;">
+					$(if login-by == 'trial')
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+						<input class="form-control" readonly disabled value="$(mac)">
+					</div>
+
+					$(elif login-by != 'mac')
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+						<input class="form-control" readonly disabled value="$(username)">
+					</div>
+					$(endif)
+                    $(if error)
+                        <div class="alert alert-danger alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <strong>Estamos enfrentando um erro:</strong> $(error).
+                        </div>
+                    $(endif)
+
+
+				<div style="background-color: rgba(255, 255, 255, 0.49);border-bottom-right-radius:5px;border-bottom-left-radius:5px;padding:10px;margin-bottom:20px;">
+					
+					<form role="form">
+						<div id="seUsuarioTrial">
+							$(if session-time-left)
+
+								<div class="input-group has-error">
+									<span class="input-group-addon"><i class="fa fa-history fa-fw"></i></span>
+									<input class="form-control" readonly disabled value="Tempo restante: $(session-time-left)">
+								</div>
+								<div style="margin-top:5px;"></div>
+								<div class="input-group has-error">
+									<span class="input-group-addon"><i class="fas fa-tachometer-alt"></i></span>
+									<input class="form-control" readonly disabled value="Velocidade disponível: 1 Mbps">
+								</div>
+								<hr style="border-color: rgba(255, 255, 255, 1) -moz-use-text-color -moz-use-text-color;"/>
+
+
+
+
+
+
+
+
+							$(endif)
+						</div>
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-history fa-fw"></i></span>
+							<input class="form-control" readonly disabled value="Tempo conectado: $(uptime)">
+						</div>
+
+						<div style="margin-top:5px;"></div>
+						<div class="input-group ">
+							<span class="input-group-addon"><i class="fa fa-star fa-fw"></i></span>
+							<input class="form-control" readonly disabled value="$(ip)$(mac)">
+             			</div>
+						<div style="margin-top:5px;"></div>
+						<div class="input-group ">
+							<span class="input-group-addon"><i class="fa fa-download fa-fw"></i></span>
+							<input class="form-control" readonly disabled value="Dados recebidos:$(bytes-out-nice)">
+						</div>
+						<div style="margin-top:5px;"></div>
+						<div class="input-group ">
+							<span class="input-group-addon"><i class="fa fa-upload fa-fw"></i></span>
+							<input class="form-control" readonly disabled value="Dados enviados:$(bytes-in-nice)">
+						</div>
+						<div style="margin-top:5px;"></div>
+
+
+
+					</form>
+
+						<div id="sairDoWifi">
+							$(if login-by == 'trial')
+								<div style="margin-top:5px;"></div>
+								<form action="$(link-logout)" name="logout" onSubmit="return openLogout()">
+									<button type="submit" id="loading-example-btn" data-loading-text="Loading..." class="btn btn-default btn-block"><i class="fa fa-sign-out fa-fw"></i>Sair do Wi-fi</button>
+								</form>
+							$(elif login-by != 'mac')
+								<div style="margin-top:5px;"></div>
+								<form action="$(link-logout)" name="logout" onSubmit="return openLogout()">
+									<button type="submit" id="loading-example-btn" data-loading-text="Loading..." class="btn btn-default btn-block"><i class="fa fa-sign-out fa-fw"></i>Sair do Wi-fi</button>
+								</form>
+							$(endif)
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+    <div id="KBPenderecoT!SOS" >
+            <script>kbpEnderecoContratante();</script>
+        </div>
+    <div id="KBPscriptFinal">
+        <script src="zArquivos/js/bootstrap.min.js"></script>
+        <script src="zArquivos/js/jquery.backstretch.js"></script>
+    </div>
+    <div id="KBPpapelDeParede"><script>kbpPapelDeParede(papelParede1,papelParede1,papelParede1,papelParede1,papelParede2,papelParede3);</script></div>
+    <div id="KBProdaPe"><footer><script>kbpRodaPe();</script></footer></div>
+</body>
+</html>

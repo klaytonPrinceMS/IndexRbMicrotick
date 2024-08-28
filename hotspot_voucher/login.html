@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--
+======================================================================
+==                        T! SOS Sistemas                           ==
+======================================================================
+== Responsável técnico: Klayton Bueno Prince, Analista de  Sistemas ==
+== com  especialisação  em Segurança  da Informação, com  enfase em ==
+== Segurança de redes: Roteadores de borda, como serviço para PME's ==
+== e usúarios domésticos                                            ==
+======================================================================
+-->
+<head>
+    <title>T! SOS- WIFI</title>
+    <link rel="shortcut icon" href="zArquivos/img/favicon.png" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wi-fi T! SOS Sistemas">
+    <meta name="author" content="Klayton Bueno Prince">
+    <!-- css -->
+    <link rel="stylesheet" href="zArquivos/css/bootstrap3-2-0.css" rel="stylesheet">
+    <link rel="stylesheet" href="zArquivos/css/KBPstyle.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+    <!--JS -->
+    <script type="text/javascript" src="zArquivos/js/kbp.js"></script>
+    <script type="text/javascript" src="zArquivos/js/md5.js"></script>
+    <script type="text/javascript" src="zArquivos/js/jquery1-11-1.js"></script>
+    <!-- CSS JS Fora do site -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- login google -->
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="878009696495-sma8qf2ot1kfpr8u8rg613sp7aj1sevt.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- JavaScript da pagina -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".esconder").hide();
+            //$("#mostrarLoginVoucher").hide();
+            $("#mostrarLoginVoucher").click(function(){$(".esconder").hide();$("#loginVoucher").delay("100").fadeIn("slow")});
+        })
+    </script>
+    <style type="text/css">
+        #nomeGoogle, #ultimoNomeGoogle, #emailGoogle, .kbp {
+            font-weight: bold;
+            color: #0066AA;
+        }
+        .g-signin2, .g-signin2 .abcRioButton {
+            display: block;
+            margin: 20px auto 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="KBPlogin">
+         $(if chap-id)
+            <form name="sendin" action="$(link-login-only)" method="post">
+                <input type="hidden" name="username" />
+                <input type="hidden" name="password" />
+                <input type="hidden" name="dst" value="$(link-orig)" />
+                <input type="hidden" name="popup" value="true" />
+            </form>
+
+            <script type="text/javascript" src="/md5.js"></script>
+            <script type="text/javascript">
+            <!--
+                function doLogin() {
+                document.sendin.username.value = document.login.username.value.toUpperCase();
+                document.sendin.password.value = hexMD5('$(chap-id)' + "voucher" + '$(chap-challenge)');
+                document.sendin.submit();
+                return false;
+                }
+            //-->
+            </script>
+        $(endif)
+    </div>
+    <div id="KBPmenuFlutuante"><script>kbpMenuFlutuante();</script></div>
+    <div id="KBPcorpoSite">
+        <div class="container">
+            <div class="row box-top container">
+                <div id="KBPcontainerEsquerdo">
+                    <div class="col-xs-12 col-sm-12 col-md-8 " >
+                        <script>kbpLoginContainerEsquerdo()</script>
+                    </div>
+                </div>
+                <div id="KBPcontainerDireito">
+                    <div id="kbpMenuLogin" class="col-xs-12 col-sm-12 col-md-4">
+                        <div id="kbpTituloMenu" class="section-title">
+                            <div class="divider">
+                                <script>kbpEscreverTitulo(tituloLogin)</script>
+                            </div>
+                        </div>
+                        <div id="menuLogin" style="background-color: rgba(255, 255, 255, 0.49);border-bottom-right-radius:3px;border-bottom-left-radius:3px;padding:10px;margin-bottom:20px;">
+                            <div id="erro">
+                                $(if error)
+                                    <div class="alert alert-danger alert-dismissible" role="alert">
+                                        <button type="button" class="close" data-dismiss="alert">
+                                            <span aria-hidden="true">&times;</span>
+                                            <span class="sr-only">Close</span>
+                                        </button>
+                                        <strong>Infelizmente estamos com um erro:</strong> $(error).
+                                    </div>
+                                $(endif)
+                            </div>
+                            <br>
+                            <div id="menu" style="background-color: rgba(255, 255, 255, 0.49);border-bottom-right-radius:3px;border-bottom-left-radius:3px;padding:10px;margin-bottom:20px;">
+                                <div class="text-center">
+                                    <button id="mostrarLoginVoucher"       style="background-color:#c0c0c0" class="btn btn-social-icon btn-google">
+                                        <span class="fas fa-ticket-alt"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="itens" style="...">
+                                <div id="loginVoucher" class="text-center esconder" style="background-color: rgba(255, 255, 255, 0.49);border-bottom-right-radius:3px;border-bottom-left-radius:3px;padding:10px;margin-bottom:20px;">
+                                    <p class="kbp text-justify">
+                                        R$3,00 3Mb 1h<br>
+                                        R$5,00 5Mb 1h<br>
+                                        R$10,00 1GB 1Mês<br>
+                                        R$49,99 6GB 1Mês<br>
+                                    </p>
+                                    <p id="loginVoucherTexto" class="kbp text-center">
+                                    </p>
+                                    <form role="form" name="login" action="$(link-login-only)" method="post" $(if chap-id) onsubmit="return doLogin()" $(endif)>
+                                        <input type="hidden" name="dst" value="$(link-orig)"/>
+                                        <input type="hidden" name="popup" value="true"/>
+                                        <div class="input-group ">
+                                            <span class="input-group-addon"><i class="fas fa-ticket-alt"></i></span>
+                                            <input type="text" name="username" class="form-control" minlength=6 placeholder="Insira seu Código">
+                                        </div>
+                                        <div style="margin-top:5px;"></div>
+                                        <button type='submit' id='loading-example-btn' data-loading-text='Loading...' class='btn btn-default btn-block'><i class='fa fa-sign-in fa-fw'></i><script>document.write(btnLoginEmail)</script></button>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="KBPenderecoT!SOS"><script>kbpEnderecoContratante();</script></div>
+    <div id="KBProdaPe"><footer><script>kbpRodaPe();</script></footer></div>
+    <div id="KBPscriptFinal">
+    <script src="zArquivos/js/bootstrap.min.js"></script>
+    <script src="zArquivos/js/jquery.backstretch.js"></script>
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+</div>
+    <div id="KBPpapelDeParede"><script>kbpPapelDeParede();</script></div>
+</body>
+</html>
+
+
+
+
+
+<!--
+div menu-flutuante precisa
+jquery1-11-1.js
+KBPstyle.css
+
+div menu-login precisa
+KBPstyle.css
+
+icones precisa
+fontWaesome4-2-0.css
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+retirados
+jquery-1.6.4.min.js
+docs.min.js
+customize.min.js
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+
+-->
